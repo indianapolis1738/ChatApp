@@ -1,0 +1,119 @@
+body{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    width: 100vw;
+}
+
+.home{
+    width: 50vw;
+    background-color: #1B273F;
+    margin-left: 25vw;
+    height: 100vh;
+    position: fixed;
+
+    @media screen and (max-width: 770px) {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .welcome{
+        color: #edeff4;
+        padding-left: 5%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .balance{
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 12px;
+        height: 12rem;
+        background-color: whitesmoke;
+        color: #1B273F;
+
+        label{
+            padding-left: 5%;
+        }
+
+        .balance-amount{
+            font-weight: 500;
+            font-size: 20px;
+            padding-left: 5%;
+            padding-top: 0;
+        }
+
+        .history{
+            float: right;
+            padding-top: 9%;
+            padding-right: 5%;
+            color: #1B273F;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+   
+    .recent{
+        color: aliceblue;
+
+        h3{
+             padding-left: 5%;
+        }
+
+        table{
+            width: 100%;
+            height: 100pz;
+           th, td{
+            width: 25%;
+            text-align: center;
+           }
+           tbody{
+            overflow: scroll;
+           }
+        }
+    }
+
+    .links{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: aliceblue;
+        height: 4rem;
+
+        @media screen and (max-width: 770px) {
+            width: 100%;
+        }
+
+        .send{
+            background-color: #1B273F;
+            width: 7rem;
+            height: 3rem;
+            color: whitesmoke;
+            margin-top: .5rem;
+            text-align: center;
+            padding-top: .5rem;
+            border-radius: 12px;
+            font-size: 20px;
+        }
+
+        .send:hover{
+            color: #1B273F;
+            background-color: wheat;
+        }
+    }
+
+    .Back{
+        height: 2rem;
+        width: 3rem;
+        background-color: transparent;
+        color: #edeff4;
+        font-weight: 800;
+        font-size: 25px;
+        border-radius: 12;
+        margin: 4%;
+        border: none;
+        cursor: pointer;
+    }
+}
